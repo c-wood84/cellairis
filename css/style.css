@@ -1,0 +1,717 @@
+/* === Global Styles === */
+html {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, strong {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 800;
+
+}
+
+p {
+  font-size: 12px;
+  font-weight: normal;
+	
+}
+
+header, nav, section, footer {
+	display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 16px;
+  line-height: 1.4285em;
+  font-size: 11px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0px;
+  background: #ff4e00;
+  font-weight: 900;
+
+}
+
+.btn:hover {
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  background: #d04000;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff4e00;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.btn, a.btn {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* === General Styles === */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+  color: #fff;
+
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+/* === Nav Overlay Styles === */
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=75)';
+  overflow: hidden;
+  transition: 0.5s;
+
+}
+
+#overlay-navigation {
+  width: 30%;
+  float: right;
+}
+
+#overlay-header {
+  padding: 0 180px;
+}
+
+.x-nav span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.x-nav span:nth-child(2) {
+  display: none;
+}
+
+.x-nav span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.overlay-content {
+  width: 100%;
+  position: relative;
+  top: 25%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.overlay-content a {
+  padding: 10px;
+  font-size: 43px;
+  font-weight: 400;
+  display: block;
+}
+
+.overlay-content a:hover {
+  font-weight: light;
+  color: #ff4e00;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  text-decoration: underline;
+
+}
+
+#header {
+  height: 70px;
+  width: 100%;
+}
+
+#logo {
+  width: 30%;
+  float: left;
+}
+
+#navigation {
+  width: 30%;
+  float: right;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+  z-index: 40;
+  margin: 0;
+  cursor: pointer;
+  float: right;
+}
+
+.nav-icon span {
+  width: 100%;
+  height: 4px;
+  margin: 10px 0 0;
+  background: #fff;
+  display: block;
+  position: absolute;
+  left: 0;
+  -webkit-transition: .2s ease-in-out;
+   transition: .2s ease-in-out;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+   transform: rotate(0);     
+}
+
+.hamburger-nav span:nth-child(1) {
+  top: 0;
+
+}
+
+.hamburger-nav span:nth-child(2) {
+  top: 10px;
+}
+
+.hamburger-nav span:nth-child(3) {
+  top: 20px;
+}
+
+
+
+/* === Footer Styles === */
+
+  #footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #footer p {
+    color: #fff;
+    text-align: center;
+  }
+
+/* iPhone 5, 5s, 5c and 5sE */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+
+  .container {
+    padding: 0 25px;
+
+  }
+
+  .full-width {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background:url('../images/cellairis_mhero_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  /* === Header Styles === */
+  #header {
+    height: 50px;
+    width: 100%;
+  }
+
+  #navigation {
+    width: 10%;
+    float: right;
+
+  }
+
+   .main-body {
+    padding: 140px 0 50px;
+    color: #fff;
+    width: 100%;
+
+  }
+
+   .main-body h1 {
+    line-height: .9em;
+    padding: 10px 0;
+  }
+
+  .main-body p {
+    font-size: 12px;
+    line-height: 1.5em;
+    padding-bottom: 10px;
+
+  }
+
+  .nav-icon {
+    float:unset;
+    width: 35px;
+    height: 35px;
+  }
+
+  #overlay-header {
+    width: 100%;
+    height: 50px;
+    padding: 0 25px;
+
+  }
+
+  #overlay-navigation {
+    width: 24%;
+    float: right;
+  }
+
+  #x-nav {
+    position: relative;
+    top: -7px;
+  }
+
+  .overlay-content {
+    top: 0;
+    padding: 0;
+  }
+
+}
+
+/* iPhone 6, 6S, 7 and 8 */
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+
+  .container {
+    padding: 0 25px;
+
+  }
+
+  .full-width {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background:url('../images/cellairis_mhero_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  #header {
+    height: 50px;
+    width: 100%;
+  }
+
+  #navigation {
+    width: 10%;
+    float: right;
+
+  }
+
+   .main-body {
+    padding: 140px 0 50px;
+    color: #fff;
+    width: 100%;
+
+  }
+
+   .main-body h1 {
+    line-height: .9em;
+    padding: 10px 0;
+  }
+
+  .main-body p {
+    font-size: 12px;
+    line-height: 1.5em;
+    padding-bottom: 10px;
+
+  }
+
+  .nav-icon {
+    float:unset;
+    width: 38px;
+    height: 38px;
+  }
+
+  #overlay-header {
+    width: 100%;
+    height: 50px;
+    padding: 0 25px;
+
+  }
+
+  #overlay-navigation {
+    width: 22%;
+    float: right;
+  }
+
+  #x-nav {
+    position: relative;
+    top: -7px;
+  }
+
+  .overlay-content {
+    top: 10%;
+    padding: 0;
+  }
+
+   #footer {
+    padding:25px 0 10px;
+  }
+
+}
+
+
+/* iPhone 6+, 7+ and 8+ */
+@media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+
+  .container {
+    padding: 0 25px;
+
+  }
+
+  .full-width {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background:url('../images/cellairis_mhero_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  #header {
+    height: 50px;
+    width: 100%;
+  }
+
+  #navigation {
+    width: 10%;
+    float: right;
+
+  }
+
+   .main-body {
+    padding: 225px 0 50px;
+    color: #fff;
+    width: 85%;
+
+  }
+
+   .main-body h1 {
+    line-height: .9em;
+    padding: 10px 0;
+  }
+
+  .main-body p {
+    font-size: 12px;
+    line-height: 1.5em;
+    padding-bottom: 10px;
+
+  }
+
+  .nav-icon {
+    float:unset;
+    width: 38px;
+    height: 38px;
+  }
+
+  #overlay-header {
+    width: 100%;
+    height: 50px;
+    padding: 0 25px;
+
+  }
+
+  #overlay-navigation {
+    width: 21%;
+    float: right;
+  }
+
+  #x-nav {
+    position: relative;
+    top: -7px;
+  }
+
+  .overlay-content {
+    top: 10%;
+    padding: 0;
+  }
+
+  #footer {
+    padding:25px 0 10px;
+  }
+
+}
+
+
+/* iPhone X */
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+.container {
+    padding: 0 25px;
+
+  }
+
+  .full-width {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background:url('../images/cellairis_mhero_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  #header {
+    height: 50px;
+    width: 100%;
+  }
+
+  #navigation {
+    width: 10%;
+    float: right;
+
+  }
+
+   .main-body {
+    padding: 225px 0 50px;
+    color: #fff;
+    width: 85%;
+
+  }
+
+   .main-body h1 {
+    line-height: .9em;
+    padding: 10px 0;
+  }
+
+  .main-body p {
+    font-size: 12px;
+    line-height: 1.5em;
+    padding-bottom: 10px;
+
+  }
+
+  .nav-icon {
+    float:unset;
+    width: 38px;
+    height: 38px;
+  }
+
+  #overlay-header {
+    width: 100%;
+    height: 50px;
+    padding: 0 25px;
+
+  }
+
+  #overlay-navigation {
+    width: 22%;
+    float: right;
+  }
+
+  #x-nav {
+    position: relative;
+    top: -7px;
+  }
+
+  .overlay-content {
+    top: 10%;
+    padding: 0;
+  }
+
+  #footer {
+    padding: 25px 0 10px;
+  }
+
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .full-width {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background:url('../images/cellairis_hero_bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+  .container {
+    padding: 0 80px 0;
+
+  }
+
+/* === Header Styles === */
+  #header {
+  height: 70px;
+  width: 100%;
+}
+  
+  /* === Main Content Styles === */
+  .main-body {
+    padding: 225px 0 100px;
+    color: #fff;
+    width: 85%;
+
+  }
+
+  .main-body h1 {
+    
+    font-size: 70px;
+    line-height: .9em;
+    padding: 25px 0;
+  }
+
+  .main-body p {
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 0 0 25px;
+
+  }
+
+}
+
+
+/* Medium Devices, Laptops Desktops */
+@media only screen and (min-width: 992px) and ( max-width: 1200px){
+
+  .full-width {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background:url('../images/cellairis_hero_bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+  .container {
+    padding: 0 180px 0;
+
+  }
+
+  /* === Header Styles === */
+  #header {
+  height: 70px;
+  width: 100%;
+}
+  
+  /* === Main Content Styles === */
+  .main-body {
+    padding: 200px 0 100px;
+    color: #fff;
+    width: 50%;
+
+  }
+
+  .main-body h1 {
+    
+    font-size: 70px;
+    line-height: .9em;
+    padding: 25px 0;
+  }
+
+  .main-body p {
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 0 0 25px;
+
+  }
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px){
+
+  .full-width {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background:url('../images/cellairis_hero_bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+  .container {
+    padding: 0 180px 0;
+
+  }
+
+  /* === Header Styles === */
+  #header {
+  height: 70px;
+  width: 100%;
+}
+  
+  /* === Main Content Styles === */
+  .main-body {
+    padding: 200px 0 80px;
+    color: #fff;
+    width: 50%;
+    margin-top: 10px;
+
+  }
+
+  .main-body h1 {
+    
+    font-size: 70px;
+    line-height: .9em;
+    padding: 25px 0;
+  }
+
+  .main-body p {
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 0 0 25px;
+
+  }
+
+}
+
