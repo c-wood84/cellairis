@@ -49,9 +49,10 @@ img {
 }
 
 .btn:hover {
-  -webkit-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   background: #d04000;
 }
 
@@ -67,10 +68,13 @@ a:link, a:visited {
 a:hover {
   text-decoration: none;
   color: #ff4e00;
-  -webkit-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+} 
+
+
 
 .btn, a.btn {
   -webkit-font-smoothing: antialiased;
@@ -98,6 +102,8 @@ body {
    height: 0;
    clear: both;
 }
+
+
 /* === Nav Overlay Styles === */
 
 .overlay {
@@ -130,6 +136,7 @@ body {
   top: 18px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -141,6 +148,7 @@ body {
   top: 18px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -162,11 +170,11 @@ body {
 .overlay-content a:hover {
   font-weight: light;
   color: #ff4e00;
-  -webkit-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  transition: all 0.6s ease;
   text-decoration: underline;
-
+  -webkit-transition: all 800ms ease;
+  -moz-transition: all 800ms ease;
+  -o-transition: all 800ms ease;
+  transition: all 800ms ease;
 }
 
 #header {
@@ -203,16 +211,11 @@ body {
   display: block;
   position: absolute;
   left: 0;
-  -webkit-transition: .2s ease-in-out;
-   transition: .2s ease-in-out;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-   transform: rotate(0);     
+  
 }
 
 .hamburger-nav span:nth-child(1) {
   top: 0;
-
 }
 
 .hamburger-nav span:nth-child(2) {
@@ -222,8 +225,6 @@ body {
 .hamburger-nav span:nth-child(3) {
   top: 20px;
 }
-
-
 
 /* === Footer Styles === */
 
@@ -242,17 +243,17 @@ body {
 
   .container {
     padding: 0 25px;
-
   }
 
   .full-width {
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 0;
     background:url('../images/cellairis_mhero_bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 568px;
   }
 
   /* === Header Styles === */
@@ -264,14 +265,12 @@ body {
   #navigation {
     width: 10%;
     float: right;
-
   }
 
    .main-body {
     padding: 140px 0 50px;
     color: #fff;
     width: 100%;
-
   }
 
    .main-body h1 {
@@ -296,7 +295,6 @@ body {
     width: 100%;
     height: 50px;
     padding: 0 25px;
-
   }
 
   #overlay-navigation {
@@ -318,78 +316,21 @@ body {
 
 /* iPhone 6, 6S, 7 and 8 */
 @media only screen and (min-width: 375px) and (max-width: 667px) {
-
-  .container {
-    padding: 0 25px;
-
-  }
-
   .full-width {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    background:url('../images/cellairis_mhero_bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-
-  #header {
-    height: 50px;
-    width: 100%;
-  }
-
-  #navigation {
-    width: 10%;
-    float: right;
-
-  }
-
-   .main-body {
-    padding: 140px 0 50px;
-    color: #fff;
-    width: 100%;
-
-  }
-
-   .main-body h1 {
-    line-height: .9em;
-    padding: 10px 0;
-  }
-
-  .main-body p {
-    font-size: 12px;
-    line-height: 1.5em;
-    padding-bottom: 10px;
-
+    min-height: 667px;
   }
 
   .nav-icon {
-    float:unset;
     width: 38px;
     height: 38px;
   }
 
-  #overlay-header {
-    width: 100%;
-    height: 50px;
-    padding: 0 25px;
-
-  }
-
   #overlay-navigation {
     width: 22%;
-    float: right;
-  }
-
-  #x-nav {
-    position: relative;
-    top: -7px;
   }
 
   .overlay-content {
     top: 10%;
-    padding: 0;
   }
 
    #footer {
@@ -398,81 +339,20 @@ body {
 
 }
 
-
 /* iPhone 6+, 7+ and 8+ */
-@media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-
-  .container {
-    padding: 0 25px;
-
-  }
-
+@media only screen and (min-width: 414px) and (max-width: 736px)  {
   .full-width {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    background:url('../images/cellairis_mhero_bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-
-  #header {
-    height: 50px;
-    width: 100%;
-  }
-
-  #navigation {
-    width: 10%;
-    float: right;
-
+    min-height: 736px;
   }
 
    .main-body {
     padding: 225px 0 50px;
     color: #fff;
     width: 85%;
-
-  }
-
-   .main-body h1 {
-    line-height: .9em;
-    padding: 10px 0;
-  }
-
-  .main-body p {
-    font-size: 12px;
-    line-height: 1.5em;
-    padding-bottom: 10px;
-
-  }
-
-  .nav-icon {
-    float:unset;
-    width: 38px;
-    height: 38px;
-  }
-
-  #overlay-header {
-    width: 100%;
-    height: 50px;
-    padding: 0 25px;
-
   }
 
   #overlay-navigation {
     width: 21%;
-    float: right;
-  }
-
-  #x-nav {
-    position: relative;
-    top: -7px;
-  }
-
-  .overlay-content {
-    top: 10%;
-    padding: 0;
   }
 
   #footer {
@@ -484,21 +364,23 @@ body {
 
 /* iPhone X */
 @media only screen and (min-width: 375px) and (max-width: 812px) {
-.container {
-    padding: 0 25px;
 
+  .container {
+    padding: 0 25px;
   }
 
   .full-width {
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 0;
     background:url('../images/cellairis_mhero_bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 812px;
   }
 
+  /* === Header Styles === */
   #header {
     height: 50px;
     width: 100%;
@@ -507,17 +389,15 @@ body {
   #navigation {
     width: 10%;
     float: right;
-
   }
 
    .main-body {
     padding: 225px 0 50px;
     color: #fff;
     width: 85%;
-
   }
 
-   .main-body h1 {
+  .main-body h1 {
     line-height: .9em;
     padding: 10px 0;
   }
@@ -539,7 +419,6 @@ body {
     width: 100%;
     height: 50px;
     padding: 0 25px;
-
   }
 
   #overlay-navigation {
@@ -557,10 +436,11 @@ body {
     padding: 0;
   }
 
+
+
   #footer {
     padding: 25px 0 10px;
   }
-
 
 }
 
@@ -581,7 +461,6 @@ body {
 
   .container {
     padding: 0 80px 0;
-
   }
 
 /* === Header Styles === */
@@ -595,7 +474,6 @@ body {
     padding: 225px 0 100px;
     color: #fff;
     width: 85%;
-
   }
 
   .main-body h1 {
@@ -609,7 +487,10 @@ body {
     font-size: 14px;
     line-height: 1.5em;
     padding: 0 0 25px;
+  }
 
+  #footer {
+    padding: 15px 0;
   }
 
 }
@@ -631,7 +512,6 @@ body {
 
   .container {
     padding: 0 180px 0;
-
   }
 
   /* === Header Styles === */
@@ -649,7 +529,6 @@ body {
   }
 
   .main-body h1 {
-    
     font-size: 70px;
     line-height: .9em;
     padding: 25px 0;
@@ -659,11 +538,14 @@ body {
     font-size: 14px;
     line-height: 1.5em;
     padding: 0 0 25px;
+  }
 
+  #footer {
+    position: relative;
+    top: -50px;
   }
 
 }
-
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px){
@@ -700,7 +582,6 @@ body {
   }
 
   .main-body h1 {
-    
     font-size: 70px;
     line-height: .9em;
     padding: 25px 0;
@@ -710,7 +591,10 @@ body {
     font-size: 14px;
     line-height: 1.5em;
     padding: 0 0 25px;
+  }
 
+  #footer {
+    padding: 15px 0;
   }
 
 }
